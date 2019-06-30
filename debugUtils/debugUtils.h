@@ -1,5 +1,5 @@
 //https://forum.arduino.cc/index.php?topic=64555.0
-#define DEBUG
+//#define DEBUG
 
 #ifndef DEBUGUTILS_H
 #define DEBUGUTILS_H

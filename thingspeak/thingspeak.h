@@ -1,9 +1,7 @@
 #ifndef Thingspeak_h
 #define Thingspeak_h
-//#include "tools.h"
 #include "Arduino.h"
 
-//void maybeInquireThingspeak(State *state);
 void logMessageToThingspeak(String err);
 void maybeLogTelemetryToThingspeak(String apiKey, unsigned long interval, String d1);
 void maybeLogTelemetryToThingspeak(String apiKey, unsigned long interval, String d1, String d2);
