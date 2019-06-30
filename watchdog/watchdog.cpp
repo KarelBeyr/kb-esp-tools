@@ -9,11 +9,11 @@ void IRAM_ATTR resetModule()
   esp_restart_noos();
 }
 
-void setupWatchdog()
+void setupWatchdog(long seconds)
 {
   timer = timerBegin(0, 80, true);  //timer 0, div 80
   timerAttachInterrupt(timer, &resetModule, true);
-  timerAlarmWrite(timer, 60*1000*1000, false);   //set time in us , currently 60s
+  timerAlarmWrite(timer, seconds*1000*1000, false);   //set time in us
   timerAlarmEnable(timer);  //enable interrupt
 }
 

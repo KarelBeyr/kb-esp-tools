@@ -1,7 +1,7 @@
 #ifndef Watchdog_h
 #define Watchdog_h
 
-void setupWatchdog();
+void setupWatchdog(long seconds);
 void feedWatchdog();
 
 #endif
